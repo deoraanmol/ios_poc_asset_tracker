@@ -85,6 +85,7 @@ class HomePageController: UIViewController, CLLocationManagerDelegate {
             let roundedResult = Int(result)
             if(roundedResult >= timeThresholdForSendingLocUpdates){
                 print("now added.. \(roundedResult), \(timeThresholdForSendingLocUpdates)")
+                self.sendLocationToServer(latitude, longitude);
                 app.set(date, forKey: "locUpdate")
             }else{
                 print("not adding.")
@@ -96,6 +97,15 @@ class HomePageController: UIViewController, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager,
                          didFailWithError error: Error) {
         print(error.localizedDescription)
+    }
+    
+    
+    func sendLocationToServer(latitude:String, longitude:String) -> Void{
+        var serverSaveUrl = "http://localhost:8080/packageStatus/fetchDetails/44";
+        var url = NSURL(string: serverSaveUrl)
+        var urlReq =  NSMutableURLRequest(URL:url!);
+        
+        
     }
     
     @objc func toggleStatusLabel(){
