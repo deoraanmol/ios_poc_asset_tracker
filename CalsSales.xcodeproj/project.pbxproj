@@ -15,6 +15,14 @@
 		40AC3041209B1C8400048FFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40AC303F209B1C8400048FFD /* LaunchScreen.storyboard */; };
 		40AC304C209B1C8400048FFD /* CalsSalesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AC304B209B1C8400048FFD /* CalsSalesTests.swift */; };
 		40AC3057209B1C8400048FFD /* CalsSalesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AC3056209B1C8400048FFD /* CalsSalesUITests.swift */; };
+		40AC3065209B1CBE00048FFD /* favicon.ico in Resources */ = {isa = PBXBuildFile; fileRef = 40AC3064209B1CBE00048FFD /* favicon.ico */; };
+		40AC3067209B24AF00048FFD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AC3066209B24AF00048FFD /* SignInViewController.swift */; };
+		40B7E73A209C2556002C5A4F /* HomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B7E739209C2556002C5A4F /* HomePageController.swift */; };
+		40B7E741209C43DC002C5A4F /* no.png in Resources */ = {isa = PBXBuildFile; fileRef = 40B7E73F209C43DB002C5A4F /* no.png */; };
+		40B7E742209C43DC002C5A4F /* yes.png in Resources */ = {isa = PBXBuildFile; fileRef = 40B7E740209C43DC002C5A4F /* yes.png */; };
+		40B7E745209C5C1B002C5A4F /* no.png in Resources */ = {isa = PBXBuildFile; fileRef = 40B7E743209C5C1A002C5A4F /* no.png */; };
+		40B7E746209C5C1B002C5A4F /* shareLive.png in Resources */ = {isa = PBXBuildFile; fileRef = 40B7E744209C5C1A002C5A4F /* shareLive.png */; };
+		40B7E748209C5DAC002C5A4F /* stopShare.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 40B7E747209C5DAC002C5A4F /* stopShare.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		40AC3052209B1C8400048FFD /* CalsSalesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalsSalesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40AC3056209B1C8400048FFD /* CalsSalesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalsSalesUITests.swift; sourceTree = "<group>"; };
 		40AC3058209B1C8400048FFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40AC3064209B1CBE00048FFD /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = favicon.ico; sourceTree = "<group>"; };
+		40AC3066209B24AF00048FFD /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		40B7E739209C2556002C5A4F /* HomePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageController.swift; sourceTree = "<group>"; };
+		40B7E73F209C43DB002C5A4F /* no.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = no.png; sourceTree = "<group>"; };
+		40B7E740209C43DC002C5A4F /* yes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yes.png; sourceTree = "<group>"; };
+		40B7E743209C5C1A002C5A4F /* no.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = no.png; path = ../../../no.png; sourceTree = "<group>"; };
+		40B7E744209C5C1A002C5A4F /* shareLive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shareLive.png; sourceTree = "<group>"; };
+		40B7E747209C5DAC002C5A4F /* stopShare.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stopShare.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +120,16 @@
 				40AC3037209B1C8300048FFD /* Main.storyboard */,
 				40AC303D209B1C8400048FFD /* Assets.xcassets */,
 				40AC303F209B1C8400048FFD /* LaunchScreen.storyboard */,
+				40AC3064209B1CBE00048FFD /* favicon.ico */,
+				40B7E747209C5DAC002C5A4F /* stopShare.jpeg */,
+				40B7E73F209C43DB002C5A4F /* no.png */,
+				40B7E740209C43DC002C5A4F /* yes.png */,
 				40AC3042209B1C8400048FFD /* Info.plist */,
+				40B7E743209C5C1A002C5A4F /* no.png */,
+				40B7E744209C5C1A002C5A4F /* shareLive.png */,
 				40AC303A209B1C8300048FFD /* CalsSales.xcdatamodeld */,
+				40AC3066209B24AF00048FFD /* SignInViewController.swift */,
+				40B7E739209C2556002C5A4F /* HomePageController.swift */,
 			);
 			path = CalsSales;
 			sourceTree = "<group>";
@@ -196,6 +220,11 @@
 				TargetAttributes = {
 					40AC302F209B1C8300048FFD = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					40AC3046209B1C8400048FFD = {
 						CreatedOnToolsVersion = 9.3;
@@ -232,8 +261,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40B7E741209C43DC002C5A4F /* no.png in Resources */,
 				40AC3041209B1C8400048FFD /* LaunchScreen.storyboard in Resources */,
 				40AC303E209B1C8400048FFD /* Assets.xcassets in Resources */,
+				40B7E746209C5C1B002C5A4F /* shareLive.png in Resources */,
+				40B7E745209C5C1B002C5A4F /* no.png in Resources */,
+				40B7E742209C43DC002C5A4F /* yes.png in Resources */,
+				40B7E748209C5DAC002C5A4F /* stopShare.jpeg in Resources */,
+				40AC3065209B1CBE00048FFD /* favicon.ico in Resources */,
 				40AC3039209B1C8300048FFD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,9 +294,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40AC3067209B24AF00048FFD /* SignInViewController.swift in Sources */,
 				40AC3036209B1C8300048FFD /* ViewController.swift in Sources */,
 				40AC303C209B1C8300048FFD /* CalsSales.xcdatamodeld in Sources */,
 				40AC3034209B1C8300048FFD /* AppDelegate.swift in Sources */,
+				40B7E73A209C2556002C5A4F /* HomePageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

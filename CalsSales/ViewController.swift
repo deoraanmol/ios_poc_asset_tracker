@@ -20,6 +20,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBOutlet weak var catsUsername: UITextField!
+    
+    @IBOutlet weak var catsPassword: UITextField!
+    
+    
+    @IBAction func webLogin(_ sender: Any) {
+        
+        
+    }
 }
 
